@@ -85,24 +85,19 @@ document.addEventListener('DOMContentLoaded', () =>{
 
   const cards = [
     { img: "../assets/Menu.png", title: "Spaguetti Bolognese" },
-    { img: "../assets/pizza.png", title: "Pizza Margherita" },
-    { img: "../assets/pasta.png", title: "Classic Lasagna" },
+    { img: "../assets/Pizza.png", title: "Pizza Margherita" },
+    { img: "../assets/Pasta.png", title: "Classic Lasagna" },
     { img: "../assets/Appetizers.png", title: "Classic Lasagna" },
   ];
 
   let currentIndex = 0;
-  let fliiped = false;
 
   // flip on click
-nextBtn.addEventListener("click", ()=>{
-    card.classList.add("rotate");
-    
-})
-  // next image on button click
   nextBtn.addEventListener("click", () => {
-      currentIndex = (currentIndex + 1) % cards.length;
+    card.classList.add("rotate");
+    // next image on button click
+    currentIndex = (currentIndex + 1) % cards.length;
       imgEl.src = cards[currentIndex].img;
-      card.classList.add("rotate")
   });
 
 }); 
