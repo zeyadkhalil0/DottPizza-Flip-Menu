@@ -77,12 +77,8 @@
   align-items: center;
   gap: 30px;
 }
-.content {
-  transition: transform 0.3s;
-  transform-style: preserve-3d;
-}
-
- .rotate {
+.rotate {
+   transition: transform 0.3s;
   transform: rotateY(180deg);
 }
 
@@ -205,9 +201,16 @@ left: 0;
 top: 0;
 width: 100%;
 height: 100%;
-background-color: #f8102359;
+background: linear-gradient(
+    to right,
+    rgba(0, 146, 70, 0.3),
+    rgba(255, 255, 255, 0.3),
+    rgba(206, 43, 55, 0.3));
 z-index: 0;
 }
+
+
+
 
 .hero > *{
   z-index: 1;
@@ -327,4 +330,10 @@ main{
     outline: 0.2em solid var(--color-background);
     outline-offset: 0;
   }
+}
+
+
+#clickMe{
+      background: linear-gradient(80deg, #22c55e, #ffffff9a, #ef4444);
+
 }

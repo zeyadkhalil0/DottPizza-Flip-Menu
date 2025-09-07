@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () =>{
                             </path>
                         </g>
                     </svg>
-                    <strong id="clickMe">Click Me</strong>
+                    <strong id="clickme">Click Me</strong>
                 </div>
             </div>
             <div class="front">
