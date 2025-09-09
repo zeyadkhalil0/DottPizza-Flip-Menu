@@ -21,7 +21,7 @@
   height: 454px;
   position: absolute;
   left: 50%;
-  bottom: 40%;
+  bottom: 50%;
   transform: translate(-50%, 50%);
   box-shadow: 4px 3px 8px #1f1a1a;
 }
