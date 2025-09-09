@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     let cardContainer = document.getElementById('cardContainer');
     if (cardContainer){
     cardContainer.innerHTML = `
-    <div class="card">
+    <div class="card z-10">
         <div class="content">
             <div class="back">
                 <div class="back-content">
@@ -24,20 +24,12 @@ document.addEventListener('DOMContentLoaded', () =>{
                     <img id="cardimg" src="../assets/Menu.png" alt="">
                 </div>
                 <div class="front-content">
-                    <small class="badge">Pasta</small>
-                    <div class="description">
-                        <div class="title">
-                            <p class="title">
-                                <strong>Spaguetti Bolognese</strong>
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <main>
+    <main class="z-20">
 <div class="btn-conteiner">
   <a href="#" class="btn-content">
     <span class="icon-arrow">
