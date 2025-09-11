@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
           <li><a href="#contact" class="hover:text-red-600">Contact</a></li>
         </ul>
         <div>
-        <i id="menu" class="fa-solid fa-bars-staggered block md:hidden cursor-pointer pt-4 text-2xl"></i>
         <i class="fa-solid fa-pizza-slice hidden md:block text-2xl text-white cursor-pointer"></i>
         </div>
       </nav>
