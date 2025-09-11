@@ -85,15 +85,21 @@ document.addEventListener('DOMContentLoaded', () =>{
   let currentIndex = 0;
 
   // flip on click
-  nextBtn.addEventListener("click", () => {
-    card.classList.add("rotate");
-    // next image on button click
-    currentIndex = (currentIndex + 1) % cards.length;
-      imgEl.src = cards[currentIndex].img;
+  card.addEventListener("click", () => {
+    nextCard();
   });
+
+
+    function nextCard() {
+    card.classList.add("rotate");
+    currentIndex = (currentIndex + 1) % cards.length;
+    imgEl.src = cards[currentIndex].img;
+    removeRotate();
+  }
+
+  
 
 }); 
 
 
-// 
 

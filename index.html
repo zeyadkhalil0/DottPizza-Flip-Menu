@@ -5,24 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DottPizza</title>
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- fav-icon -->
-     <link rel="icon" href="/src/assets/pizza1.png">
+    <link rel="icon" href="/src/assets/pizza1.png">
     <!-- Tailwind Link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Css Link -->
     <link rel="stylesheet" href="../src/style/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
+
 <body>
-    <a href=""></a>
+    <!-- blur -->
+    <div class="blur hidden"></div>
     <!-- nav -->
     <nav>
         <div id="app"></div>
     </nav>
-    <!-- Nav -->
+
+    <!-- MobileNav -->
+    <nav>
+        <ul id="Mobilenav" class="bg-red-500 w-fit absolute -top-80 left-0 md:hidden w-full h-44 px-8 py-4 text-xl">
+            <a href="/index.html">
+                <li class="pb-2">Home</li>
+            </a>
+            <a href="./src/pages/menu.html">
+                <li class="pb-2">View Menu</li>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=201148819479&text&type=phone_number&app_absent=0"
+                target="_blank">
+                <li class="pb-2">Order Now</li>
+            </a>
+            <i class="fa-brands fa-whatsapp pr-8"></i>
+            <i class="fa-brands fa-instagram pr-8"></i>
+            <i class="fa-brands fa-facebook pr-8"></i>
+        </ul>
+        <i id="menu"
+            class="fa-solid fa-bars-staggered block md:hidden cursor-pointer pt-5 text-2xl text-white top-4 absolute right-4 z-50"></i>
+    </nav>
+
+    <!-- Nav Js -->
     <script src="./src/pages/nav.js"></script>
-    <!-- menu -->
+    <!-- menu JS -->
     <script src="./src/pages/menu.js"></script>
-    <!-- Js -->
+    <!-- Main Js -->
     <script src="./App.js"></script>
 </body>
 
