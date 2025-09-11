@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <!-- Navbar -->
       <nav id="nav" class="flex justify-between items-center  px-4 py-4  md:px-8 fixed top-0 left-0 w-full  text-white">
       <div></div>
-      <img src="./src/assets/logo.png" alt="logo" class="w-28 h-24  absolute md:-top-4 top-1 left-0 ">
+      <img src="./src/assets/logo.webp" alt="logo" class="w-28 h-24  absolute md:-top-4 top-1 left-0 ">
       <ul class="hidden md:flex gap-8  font-medium">
         <li><a href="/index.html" class="hover:text-red-600">Home</a></li>
           <li><a href="./src/pages/menu.html" class="hover:text-red-600">Menu</a></li>
