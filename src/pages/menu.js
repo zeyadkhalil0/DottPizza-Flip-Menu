@@ -76,10 +76,10 @@ document.addEventListener('DOMContentLoaded', () =>{
   let imgEl = document.getElementById("cardimg");
 
   const cards = [
-    { img: "../assets/Menu.Webp", title: "Spaguetti Bolognese" },
-    { img: "../assets/Pizza.Webp", title: "Pizza Margherita" },
-    { img: "../assets/Pasta.Webp", title: "Classic Lasagna" },
-    { img: "../assets/Appetizers.Webp", title: "Classic Lasagna" },
+    { img: "../assets/Menu.webp", title: "Spaguetti Bolognese" },
+    { img: "../assets/Pizza.webp", title: "Pizza Margherita" },
+    { img: "../assets/Pasta.webp", title: "Classic Lasagna" },
+    { img: "../assets/Appetizers.webp", title: "Classic Lasagna" },
   ];
 
   let currentIndex = 0;
