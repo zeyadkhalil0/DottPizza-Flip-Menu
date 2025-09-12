@@ -357,7 +357,7 @@ background-color: #ff2233;
 }
 
 #cardimg {
-  transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.8s ease;
+  transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.5s ease;
 }
 
 #cardimg.flip {
