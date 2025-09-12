@@ -75,10 +75,6 @@ a{
   align-items: center;
   gap: 30px;
 }
-.rotate {
-   transition: transform 0.3s;
-   transform: rotateY(180deg);
-}
 
 @keyframes rotation_481 {
   0% {
@@ -90,9 +86,12 @@ a{
   }
 }
 
+.rotate {
+  transform: rotateY(180deg);
+}
+
 .front {
   transform: rotateY(180deg);
-  color: white;
 }
 
 .front .front-content {
@@ -208,11 +207,6 @@ z-index: 0;
 }
 
 #Mobilenav{
-  background: linear-gradient(
-    to right,
-    rgba(0, 146, 70, 0.2),
-    rgba(255, 255, 255, 0.1),
-    rgba(206, 43, 55, 0.2));
     transition: 0.5s;
     z-index: 20;
 }
@@ -362,13 +356,13 @@ background-color: #ff2233;
   }
 }
 
-.blur{
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: #00000041;
-  backdrop-filter: blur(5px);
-  z-index: 3;
+#cardimg {
+  transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.8s ease;
 }
+
+#cardimg.flip {
+  transform: translateX(-100%);
+  opacity: 0;
+} 
+
 

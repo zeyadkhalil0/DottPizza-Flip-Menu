@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = "./src/pages/menu.html";
   });
 
-  let blurFilter = document.querySelector(".blur");
   let navbar = document.getElementById("Mobilenav");
   let HamburgerMenu = document.getElementById("menu");
   HamburgerMenu.addEventListener("click", () => {
@@ -51,5 +50,12 @@ document.addEventListener("DOMContentLoaded", () => {
       : HamburgerMenu.classList.replace("fa-xmark", "fa-bars-staggered");
     // Nav Mobile
     navbar.classList.toggle("top-0");
+    HamburgerMenu.classList.toggle("text-black")
   });
+
+  // icons
+  let icons = document.querySelectorAll(".icons a i");
+  icons.forEach((icon) =>{
+  icon.classList.add("m-auto", "px-4", "py-2","rounded-md", "w-8", "h-8","flex","flex-row","justify-center","items-center")
+  })
 });

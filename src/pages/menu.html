@@ -17,41 +17,58 @@
 </head>
 
 <body>
-    <!-- MobileNav -->
+<!-- MobileNav -->
     <nav>
-        <ul id="Mobilenav" class="bg-red-500 w-fit absolute -top-80 left-0 md:hidden w-full h-44 px-8 py-4 text-xl">
-            <a href="/index.html">
-                <li class="pb-2">Home</li>
-            </a>
-            <a href="./src/pages/menu.html">
-                <li class="pb-2">View Menu</li>
-            </a>
-            <a href="https://api.whatsapp.com/send/?phone=201148819479&text&type=phone_number&app_absent=0"
-                target="_blank">
-                <li class="pb-2">Order Now</li>
-            </a>
-            <i class="fa-brands fa-whatsapp pr-8"></i>
-            <i class="fa-brands fa-instagram pr-8"></i>
-            <i class="fa-brands fa-facebook pr-8"></i>
+        <ul id="Mobilenav" class="bg-white absolute -top-80 left-0 md:hidden w-full h-56 px-8 py-8 text-xl">
+            <li class="pb-2">
+                <a href="/index.html"><i class="fa-solid fa-house-chimney pr-2"></i>Home</a>
+            </li>
+            <li class="pb-2">
+                <a href="./src/pages/menu.html"><i class="fa-solid fa-utensils pr-2"></i>View Menu</a>
+            </li>
+            <li class="pb-2">
+                <a href="https://api.whatsapp.com/send/?phone=201148819479&text&type=phone_number&app_absent=0"
+                    target="_blank">
+                    <i class="fa-solid fa-pizza-slice pr-2"></i>Order Now
+                </a>
+            </li>
+            <li class="pb-2">
+                <a href="https://maps.app.goo.gl/2B2T9j11u212DBP89?g_st=ic"
+                    target="_blank">
+                    <i class="fa-solid fa-location-dot pr-2"></i>Visit Branch
+                </a>
+            </li>
+            <!-- icons -->
+             <div class="icons text-white gap-2 flex">
+                 <a href="https://api.whatsapp.com/send/?phone=201148819479&text&type=phone_number&app_absent=0"
+                     target="_blank"></href=>
+                     <i class="fa-brands fa-whatsapp bg-green-500">
+                     </i>
+                 </a>
+                 <a href="https://www.instagram.com/dott.pizza.eg?igsh=YXVyZ3Q1aDI0bjlp&utm_source=qr" target="_blank">
+                     <i class="fa-brands fa-instagram bg-red-500">
+                     </i>
+                 </a>
+                 <a href="https://www.facebook.com/share/19XHqaGEHr/?mibextid=wwXIfr" target="_blank">
+                     <i class="fa-brands fa-facebook bg-blue-500">
+                     </i>
+                 </a>
+             </div>
         </ul>
         <i id="menu"
             class="fa-solid fa-bars-staggered block md:hidden cursor-pointer pt-5 text-2xl text-white top-4 absolute right-4 z-50"></i>
     </nav>
-    <!-- nav -->
-<nav>
-    <div id="app"></div>
-</nav>
 <!-- hero -->
  <div class="hero">
      <!-- Flip-Card -->
-     <div id="cardContainer"></div>
- </div>
+     <div id="cardContainer">
 
+     </div>
+     
+ </div>
     <!-- main Js -->
      <script src="/App.js"></script>
     <!-- menu Js -->
      <script src="../pages/menu.js"></script>
-     <!-- Nav -->
-      <script src="../pages/nav.js"></script>
 </body>
 </html>
