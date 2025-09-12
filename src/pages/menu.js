@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
   hero.innerHTML=`
     <!-- Background img -->
   <picture class="absolute inset-0 w-full h-full">
-    <source srcset="/src/assets/pizza2.webp" type="image/avif" media="(max-width: 768px)">
-    <source srcset="/src/assets/pizza2.webp" type="image/avif">
-    <source srcset="/src/assets/pizza2.webp" type="image/webp" media="(max-width: 768px)">
-    <source srcset="/src/assets/pizza2.webp" type="image/webp">
-    <img src="./src/assets/pizza2.webp"
+    <source srcset="/src/assets/hero.webp" type="image/avif" media="(max-width: 768px)">
+    <source srcset="/src/assets/hero.webp" type="image/avif">
+    <source srcset="/src/assets/hero.webp" type="image/webp" media="(max-width: 768px)">
+    <source srcset="/src/assets/hero.webp" type="image/webp">
+    <img src="./src/assets/hero.webp"
          alt="Authentic Italian Pizza"
          width="1280" height="720"
          class="w-full h-full object-cover"
@@ -31,10 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   const i = [
-    { img: "./assets/menu.webp" },
-    { img: "./assets/pizza.webp" },
-    { img: "/src/assets/pasta.webp" },
-    { img: "/src/assets/Appetizers.webp" },
+    { img: "/src/assets/pasta.webp"},
+    { img: "/src/assets/pizza.webp"},
+    { img: "/src/assets/Appetizers.webp"},
+    { img: "/src/assets/menu.webp"}
   ];
   let s = 0;
   n.addEventListener("click", () => {
