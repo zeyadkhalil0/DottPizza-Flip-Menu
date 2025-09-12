@@ -27,42 +27,37 @@ document.addEventListener("DOMContentLoaded", () => {
     (loading = "lazy");
   let n = document.querySelector(".content"),
     t = document.getElementById("cardimg"),
-    C = document.getElementById("menuBtn"),
-    f = document.getElementById("flipSound");
+    C = document.getElementById("menuBtn");
 
 
   const i = [
-    { img: "../assets/menu.webp" },
-    { img: "../assets/pizza.webp" },
-    { img: "../assets/pasta.webp" },
-    { img: "../assets/Appetizers.webp" },
+    { img: "/src/assets/menu.webp" },
+    { img: "/src/assets/pizza.webp" },
+    { img: "/src//assets/pasta.webp" },
+    { img: "/src//assets/Appetizers.webp" },
   ];
   let s = 0;
   n.addEventListener("click", () => {
     n.classList.add("rotate"),
       t.classList.add("flip");
-      if (f) {
-  f.currentTime = 0;
-  f.volume = 1;
-  f.play().catch(err => console.log("Audio error:", err));
-}
 
-
-      
       setTimeout(() => {
         (s = (s + 1) % i.length),
-          (t.src = i[s].img),
-          t.classList.remove("flip");
+        (t.src = i[s].img),
+        t.classList.remove("flip");
       }, 400);
-  });
-  C?.addEventListener("click", () => {
-    window.location.href = "./src/pages/menu.html";
-  });
+    });
 
-  // Menu Path
-  let ViewMenuBtn = document.getElementById("Menubtn");
-
-if (window.location.pathname.endsWith("/src/pages/menu.html")) {
+    C?.addEventListener("click", () => {
+      window.location.href = "./src/pages/menu.html";
+    });
+    
+    // Menu Path
+    let ViewMenuBtn = document.getElementById("Menubtn");
+    n.onclick = async function() {
+      document.getElementById("flipSound").play();
+    }
+    if (window.location.pathname.endsWith("/src/pages/menu.html")) {
   ViewMenuBtn.classList.add("pointer-events-none");
 }
 
