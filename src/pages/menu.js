@@ -31,10 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   const i = [
-    { img: "/src/assets/menu.webp" },
-    { img: "/src/assets/pizza.webp" },
-    { img: "/src//assets/pasta.webp" },
-    { img: "/src//assets/Appetizers.webp" },
+    { img: "./assets/menu.webp" },
+    { img: "./assets/pizza.webp" },
+    { img: "/src/assets/pasta.webp" },
+    { img: "/src/assets/Appetizers.webp" },
   ];
   let s = 0;
   n.addEventListener("click", () => {
