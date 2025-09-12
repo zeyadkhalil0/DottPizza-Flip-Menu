@@ -15,6 +15,64 @@
     HamburgerMenu.classList.toggle("text-black")
   });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   // icons
   let icons = document.querySelectorAll(".icons a i");
   icons.forEach((icon) =>{
@@ -48,7 +106,7 @@
 
 
 
-   
+
 
 
 
