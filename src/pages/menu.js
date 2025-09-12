@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             </div>
             <div class="front">
                 <div  class="img">
-                    <img id="cardimg" src="../assets/Menu.Webp" alt="">
+                    <img id="cardimg" src="../assets/Menu.webp" alt="">
                 </div>
             </div>
         </div>
