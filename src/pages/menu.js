@@ -51,12 +51,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // Menu Path
   let ViewMenuBtn = document.getElementById("Menubtn");
   n.onclick = () => {
-  const flipSound = document.getElementById("flipSound");
-  if (flipSound) {
-    const clone = flipSound.cloneNode(); 
-    clone.play();
-  }
-};
+    const flipSound = document.getElementById("flipSound");
+    if (flipSound) {
+      const clone = flipSound.cloneNode();
+      clone.play();
+    }
+  };
 
   if (window.location.pathname.endsWith("/src/pages/menu.html")) {
     ViewMenuBtn.classList.add("pointer-events-none");

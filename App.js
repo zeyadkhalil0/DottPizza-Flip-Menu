@@ -1,236 +1,32 @@
-
-  let menuBtn = document.getElementById("menuBtn");
-  menuBtn?.addEventListener("click", () => {
-    window.location.href = "./src/pages/menu.html";
-  });
-
-  let navbar = document.getElementById("Mobilenav");
-  let HamburgerMenu = document.getElementById("menu");
-  HamburgerMenu.addEventListener("click", () => {
-    HamburgerMenu.classList.contains("fa-bars-staggered")
-      ? HamburgerMenu.classList.replace("fa-bars-staggered", "fa-xmark")
-      : HamburgerMenu.classList.replace("fa-xmark", "fa-bars-staggered");
-    // Nav Mobile
-    navbar.classList.toggle("top-0");
-    HamburgerMenu.classList.toggle("text-black")
-  });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  // icons
-  let icons = document.querySelectorAll(".icons a i");
-  icons.forEach((icon) =>{
-  icon.classList.add("m-auto", "px-4", "py-2","rounded-md", "w-8", "h-8","flex","flex-row","justify-center","items-center")
-  })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
+let menuBtn = document.getElementById("menuBtn");
+menuBtn?.addEventListener("click", () => {
+  window.location.href = "./src/pages/menu.html";
+});
+
+let navbar = document.getElementById("Mobilenav");
+let HamburgerMenu = document.getElementById("menu");
+HamburgerMenu.addEventListener("click", () => {
+  HamburgerMenu.classList.contains("fa-bars-staggered")
+    ? HamburgerMenu.classList.replace("fa-bars-staggered", "fa-xmark")
+    : HamburgerMenu.classList.replace("fa-xmark", "fa-bars-staggered");
+  // Nav Mobile
+  navbar.classList.toggle("top-0");
+  HamburgerMenu.classList.toggle("text-black");
+});
+
+// icons
+let icons = document.querySelectorAll(".icons a i");
+icons.forEach((icon) => {
+  icon.classList.add(
+    "m-auto",
+    "px-4",
+    "py-2",
+    "rounded-md",
+    "w-8",
+    "h-8",
+    "flex",
+    "flex-row",
+    "justify-center",
+    "items-center"
+  );
+});
