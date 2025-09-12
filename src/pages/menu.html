@@ -1,88 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang=en>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DottPizza</title>
-    <!-- fav-icon -->
-    <link rel="icon" href="/src/assets/pizza1.png">
-    <!-- Tailwind Link -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Css Link -->
-    <link rel="stylesheet" href="../style/style.css">
-        <!-- Font Awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>DottPizza</title>
+<link rel=icon href=/src/assets/pizza1.png>
+<script src=https://cdn.tailwindcss.com></script>
+<link rel=stylesheet href=../style/style.css>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css>
 </head>
-
 <body>
-    <!-- MobileNav -->
-     <nav>
-        <ul id="Mobilenav" class="bg-white absolute -top-80 left-0 md:hidden w-full h-56 px-8 py-8 text-xl">
-            <li class="pb-2">
-                <a href="/index.html"><i class="fa-solid fa-house-chimney pr-2"></i>Home</a>
-            </li>
-            <li class="pb-2" id="Menubtn">
-                <a href="./src/pages/menu.html"><i class="fa-solid fa-utensils pr-2"></i>View Menu</a>
-            </li>
-            <li class="pb-2">
-                <a href="https://api.whatsapp.com/send/?phone=201148819479&text&type=phone_number&app_absent=0"
-                    target="_blank">
-                    <i class="fa-solid fa-pizza-slice pr-2"></i>Order Now
-                </a>
-            </li>
-            <li class="pb-2">
-                <a href="https://maps.app.goo.gl/2B2T9j11u212DBP89?g_st=ic"
-                    target="_blank">
-                    <i class="fa-solid fa-location-dot pr-2"></i>Visit Branch
-                </a>
-            </li>
-            <!-- icons -->
-             <div class="icons text-white gap-2 flex">
-                 <a href="https://api.whatsapp.com/send/?phone=201148819479&text&type=phone_number&app_absent=0"
-                     target="_blank"></href=>
-                     <i class="fa-brands fa-whatsapp bg-green-500">
-                     </i>
-                 </a>
-                 <a href="https://www.instagram.com/dott.pizza.eg?igsh=YXVyZ3Q1aDI0bjlp&utm_source=qr" target="_blank">
-                     <i class="fa-brands fa-instagram bg-red-500">
-                     </i>
-                 </a>
-                 <a href="https://www.facebook.com/share/19XHqaGEHr/?mibextid=wwXIfr" target="_blank">
-                     <i class="fa-brands fa-facebook bg-blue-500">
-                     </i>
-                 </a>
-             </div>
-        </ul>
-        <i id="menu"
-            class="fa-solid fa-bars-staggered block md:hidden cursor-pointer pt-5 text-2xl text-white top-4 absolute right-4 z-50"></i>
-    </nav>
-    <!-- nav -->
-      <!-- Navbar -->
-      <nav id="nav" class="flex justify-between items-center  px-4 py-4  md:px-8 fixed top-0 left-0 w-full  text-white">
-      <div></div>
-      <img src="../assets/logo.webp" alt="logo" class="w-28 h-24  absolute md:-top-4 top-1 left-0 ">
-      <ul class="hidden md:flex gap-8  font-medium">
-        <li><a href="/index.html" class="hover:text-red-600">Home</a></li>
-          <li ><a href="#" class="hover:text-red-600" id="Menubtn">Menu</a></li>
-          <li><a href="#about" class="hover:text-red-600">About</a></li>
-          <li><a href="#contact" class="hover:text-red-600">Contact</a></li>
-        </ul>
-        <div>
-        <i class="fa-solid fa-pizza-slice hidden md:block text-2xl text-white cursor-pointer"></i>
-        </div>
-      </nav>
-      <!-- Flip-Card -->
-      <div class="hero" id="cardContainer">
-    </div>
-    <!-- hero -->
-    <div id="hero">
-        
-     </div>
-    <!-- main Js -->
-     <script src="/App.js"></script>
-    <!-- menu Js -->
-     <script src="../pages/menu.js"></script>
+<nav>
+<ul id=Mobilenav class="bg-white absolute -top-80 left-0 md:hidden w-full h-56 px-8 py-8 text-xl">
+<li class=pb-2>
+<a href=/index.html><i class="fa-solid fa-house-chimney pr-2"></i>Home</a>
+</li>
+<li class=pb-2 id=Menubtn>
+<a href=./src/pages/menu.html><i class="fa-solid fa-utensils pr-2"></i>View Menu</a>
+</li>
+<li class=pb-2>
+<a href="https://api.whatsapp.com/send/?phone=201148819479&text&type=phone_number&app_absent=0" target=_blank>
+<i class="fa-solid fa-pizza-slice pr-2"></i>Order Now
+</a>
+</li>
+<li class=pb-2>
+<a href="https://maps.app.goo.gl/2B2T9j11u212DBP89?g_st=ic" target=_blank>
+<i class="fa-solid fa-location-dot pr-2"></i>Visit Branch
+</a>
+</li>
+<div class="icons text-white gap-2 flex">
+<a href="https://api.whatsapp.com/send/?phone=201148819479&text&type=phone_number&app_absent=0" target=_blank>
+<i class="fa-brands fa-whatsapp bg-green-500">
+</i>
+</a>
+<a href="https://www.instagram.com/dott.pizza.eg?igsh=YXVyZ3Q1aDI0bjlp&utm_source=qr" target=_blank>
+<i class="fa-brands fa-instagram bg-red-500">
+</i>
+</a>
+<a href="https://www.facebook.com/share/19XHqaGEHr/?mibextid=wwXIfr" target=_blank>
+<i class="fa-brands fa-facebook bg-blue-500">
+</i>
+</a>
+</div>
+</ul>
+<i id=menu class="fa-solid fa-bars-staggered block md:hidden cursor-pointer pt-5 text-2xl text-white top-4 absolute right-4 z-50"></i>
+</nav>
+<nav id=nav class="flex justify-between items-center px-4 py-4 md:px-8 fixed top-0 left-0 w-full text-white">
+<div></div>
+<img src=../assets/logo.webp alt=logo class="w-28 h-24 absolute md:-top-4 top-1 left-0">
+<ul class="hidden md:flex gap-8 font-medium">
+<li><a href=/index.html class=hover:text-red-600>Home</a></li>
+<li><a href=# class=hover:text-red-600 id=Menubtn>Menu</a></li>
+<li><a href=#about class=hover:text-red-600>About</a></li>
+<li><a href=#contact class=hover:text-red-600>Contact</a></li>
+</ul>
+<div>
+<i class="fa-solid fa-pizza-slice hidden md:block text-2xl text-white cursor-pointer"></i>
+</div>
+</nav>
+<div class=hero id=cardContainer>
+</div>
+<div id=hero>
+</div>
+<script src=/App.js></script>
+<script src=../pages/menu.js></script>
 </body>
 </html>
