@@ -56,7 +56,7 @@ function nextCard() {
     currentIndex = (currentIndex + 1) % cards.length;
     imgEl.src = cards[currentIndex].img;
     imgEl.classList.remove("flip");
-  }, 500); // نفس وقت transition
+  }, 500); 
 }
 
 
