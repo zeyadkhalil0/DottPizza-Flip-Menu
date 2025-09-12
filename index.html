@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Authentic Italian Pizza - Fresh, handcrafted pizzas baked to perfection. Order online or view our menu.">
     <title>DottPizza</title>
+    <link rel="preload" as="image" href="./src/assets/pizza1.webp">
     <!-- fav-icon -->
     <link rel="icon" href="/src/assets/pizza1.png">
     <!-- Tailwind Link -->
@@ -17,16 +19,68 @@
 
 <body>
     <!-- nav -->
-    <nav>
-        <div id="app"></div>
-    </nav>
+    <!-- Navbar -->
+      <nav id="nav" class="flex justify-between items-center  px-4 py-4  md:px-8 fixed top-0 left-0 w-full  text-white z-40">
+      <div></div>
+      <img src="./src/assets/logo.webp" alt="logo" class="w-28 h-24  absolute md:-top-4 top-1 left-0">
+      <ul class="hidden md:flex gap-8  font-medium">
+        <li><a href="/index.html" class="hover:text-red-600">Home</a></li>
+          <li><a href="./src/pages/menu.html" class="hover:text-red-600">Menu</a></li>
+          <li><a href="#about" class="hover:text-red-600">About</a></li>
+          <li><a href="#contact" class="hover:text-red-600">Contact</a></li>
+        </ul>
+        <div>
+        <i class="fa-solid fa-pizza-slice hidden md:block text-2xl text-white cursor-pointer"></i>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="relative hero w-full h-screen flex items-center justify-center">
+  <!-- Background img -->
+  <picture class="absolute inset-0 w-full h-full">
+    <source srcset="/src/assets/Pizza2.webp" type="image/avif" media="(max-width: 768px)">
+    <source srcset="/src/assets/Pizza2.webp" type="image/avif">
+    <source srcset="/src/assets/Pizza2.webp" type="image/webp" media="(max-width: 768px)">
+    <source srcset="/src/assets/Pizza2.webp" type="image/webp">
+    <img src="/src/assets/Pizza2.webp"
+         alt="Authentic Italian Pizza"
+         width="1280" height="720"
+         class="w-full h-full object-cover"
+         fetchpriority="high"
+         decoding="async">
+  </picture>
+
+  <!--Gradiant Layer-->
+  <div class="absolute inset-0 bg-gradient-to-r from-green-700/60 via-white/40 to-red-600/60"></div>
+
+  <!-- Content -->
+  <div class="relative  text-center   text-white max-w-xl px-4" style="text-shadow: 5px 4px 6px rgba(0,0,0,0.8)">
+    <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+      Authentic <span class="text-red-500">Italian Pizza</span>
+    </h1>
+    <p class="mt-4 text-lg">
+      Taste the tradition of Italy with our handcrafted pizzas.
+    </p>
+    <div class="mt-6 flex justify-center gap-4">
+      <button id="menuBtn" class="bg-red-600 px-6 py-3 rounded-lg hover:bg-red-700 transition">
+        View Menu
+      </button>
+      <a href="https://api.whatsapp.com/send/?phone=201148819479"
+         target="_blank"
+         class="border border-red-600 px-6 py-3 rounded-lg hover:bg-red-600 transition">
+         Order Now
+      </a>
+    </div>
+  </div>
+</section>
+
     <!-- MobileNav -->
     <nav>
-        <ul id="Mobilenav" class="bg-white absolute -top-80 left-0 md:hidden w-full h-56 px-8 py-8 text-xl">
+        <ul id="Mobilenav" class="bg-white absolute -top-80 left-0 md:hidden w-full h-56 px-8 py-8 text-xl z-20">
             <li class="pb-2">
                 <a href="/index.html"><i class="fa-solid fa-house-chimney pr-2"></i>Home</a>
             </li>
-            <li class="pb-2">
+            <li class="pb-2" id="Menubtn">
                 <a href="./src/pages/menu.html"><i class="fa-solid fa-utensils pr-2"></i>View Menu</a>
             </li>
             <li class="pb-2">
@@ -62,7 +116,7 @@
             class="fa-solid fa-bars-staggered block md:hidden cursor-pointer pt-5 text-2xl text-white top-4 absolute right-4 z-50"></i>
     </nav>
     <!-- menu JS -->
-    <script src="./src/pages/menu.js"></script>
+    <script src="./src/pages/menu.js" defer></script>
     <!-- Main Js -->
     <script src="./App.js"></script>
 </body>
