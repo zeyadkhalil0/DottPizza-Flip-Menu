@@ -39,50 +39,50 @@ icons.forEach((icon) => {
 // Animation Intro
 
 
-window.addEventListener("load", ()=>{
-  let person = document.getElementById("person");
-  let pizzaSlice = document.getElementById("pizza-slice");
-  let welcomeText = document.getElementById("Welcome-to-dozzpizza");
-  let intro = document.getElementById("intro");
-  let moto = document.getElementById("Motorcycle");
-  let process = document.getElementById("pizzaProcess");
+// window.addEventListener("load", ()=>{
+//   let person = document.getElementById("person");
+//   let pizzaSlice = document.getElementById("pizza-slice");
+//   let welcomeText = document.getElementById("Welcome-to-dozzpizza");
+//   let intro = document.getElementById("intro");
+//   let moto = document.getElementById("Motorcycle");
+//   let process = document.getElementById("pizzaProcess");
 
-// Animation
-pizzaSlice.classList.add("fadeRight");
-setTimeout(() =>{
-  pizzaSlice.classList.replace("fadeRight","fade-out");
-},3000)
-// 
-setTimeout(() =>{
-  person.classList.add("fadeDown");
-},3000)
-// 
+// // Animation
+// pizzaSlice.classList.add("fadeRight");
+// setTimeout(() =>{
+//   pizzaSlice.classList.replace("fadeRight","fade-out");
+// },3000)
+// // 
+// setTimeout(() =>{
+//   person.classList.add("fadeDown");
+// },3000)
+// // 
 
-setTimeout(() =>{
-  person.classList.replace("fadeDown","fade-out");
-moto.classList.add("fadeRight");
-},4500)
+// setTimeout(() =>{
+//   person.classList.replace("fadeDown","fade-out");
+// moto.classList.add("fadeRight");
+// },4500)
 
-setTimeout(()=>{
-  moto.classList.replace("fadeRight","fade-out-Left");
-},7000);
+// setTimeout(()=>{
+//   moto.classList.replace("fadeRight","fade-out-Left");
+// },7000);
 
-setTimeout(() =>{
-welcomeText.classList.add("fadeUp")
-},8000)
+// setTimeout(() =>{
+// welcomeText.classList.add("fadeUp")
+// },8000)
 
-setTimeout(() =>{
-  welcomeText.classList.add("fade-out");
-},9000)
+// setTimeout(() =>{
+//   welcomeText.classList.add("fade-out");
+// },9000)
 
 
 
-setTimeout(() =>{
-intro.classList.add("fade-out");
-  setTimeout(() => {
-    intro.classList.add("hide");
-  }, 700);
-},10000)
-});
+// setTimeout(() =>{
+// intro.classList.add("fade-out");
+//   setTimeout(() => {
+//     intro.classList.add("hide");
+//   }, 700);
+// },10000)
+// });
 
 
