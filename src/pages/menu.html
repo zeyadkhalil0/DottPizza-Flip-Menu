@@ -45,23 +45,38 @@
 </ul>
 <i id=menu class="fa-solid fa-bars-staggered block md:hidden cursor-pointer pt-5 text-2xl text-white top-4 absolute right-4 z-50"></i>
 </nav>
-<nav id=nav class="flex justify-between items-center px-4 py-4 md:px-8 fixed top-0 left-0 w-full text-white">
-<div></div>
-<img src=../assets/logo.webp alt=logo class="w-28 h-24 absolute md:-top-4 top-1 left-0">
-<ul class="hidden md:flex gap-8 font-medium">
-<li><a href=/index.html class=hover:text-red-600>Home</a></li>
-<li><a href=# class=hover:text-red-600 id=Menubtn>Menu</a></li>
-<li><a href=#about class=hover:text-red-600>About</a></li>
-<li><a href=#contact class=hover:text-red-600>Contact</a></li>
-</ul>
-<div>
-<i class="fa-solid fa-pizza-slice hidden md:block text-2xl text-white cursor-pointer"></i>
-</div>
-</nav>
+<!-- Desktop Nav -->
+  <nav id=nav class="flex justify-between items-center px-4 py-4 md:px-8 fixed top-0 left-0 w-full text-white z-40">
+    <div></div>
+    <img src="../assets/logo.webp" alt=logo class="w-28 h-24 absolute md:-top-4 top-1 left-0">
+    <ul class="hidden md:flex gap-8 font-medium">
+      <li class=pb-2>
+        <a href=/index.html>Home</a>
+      </li>
+      <li class=pb-2 id=Menubtn>
+        <a href="#">View Menu</a>
+      </li>
+      <li class=pb-2>
+        <a href="https://api.whatsapp.com/send/?phone=201148819479&text&type=phone_number&app_absent=0" target=_blank>
+          Order Now
+        </a>
+      </li>
+      <li class=pb-2>
+        <a href="https://maps.app.goo.gl/2B2T9j11u212DBP89?g_st=ic" target=_blank>
+          Visit Branch
+        </a>
+      </li>
+    </ul>
+    <div>
+      <i class="fa-solid fa-pizza-slice hidden md:block text-2xl text-white cursor-pointer"></i>
+    </div>
+  </nav>
+<!-- Hero Flip Card-->
 <div class=hero id=cardContainer>
 </div>
 <div id=hero>
 </div>
+<!-- Js -->
 <script src=/App.js></script>
 <script src=../pages/menu.js></script>
 <audio id="flipSound" src="/src/audio/Flip-Sound.mp3" preload="auto"></audio>
