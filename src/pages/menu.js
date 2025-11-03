@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // hero Section
   let hero = document.getElementById("hero");
   if (hero)
-  hero.innerHTML = `
+    hero.innerHTML = `
     <!-- Background img -->
   <picture class="absolute inset-0 w-full h-full">
     <source srcset="/src/assets/hero.webp" type="image/avif" media="(max-width: 768px)">
@@ -58,6 +58,4 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.location.pathname.endsWith("/src/pages/menu.html")) {
     ViewMenuBtn.classList.add("pointer-events-none");
   }
-
 });
-
